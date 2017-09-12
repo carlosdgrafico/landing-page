@@ -1,0 +1,22 @@
+/* elimina el espacio entre los contenidos */
+.u-resetRow{
+	margin-bottom: 0;
+}
+
+/* permite que las columnas utilicen el 100% */
+.u-gutter{
+	padding-right: 0 !important;
+	padding-left: 0 !important;
+	position: relative ;
+}
+
+
+.u-gutter-left{
+	padding-left: 0 !important;
+	position: relative ;
+}
+
+.u-gutter-right{
+	padding-right: 0 !important;
+	position: relative ;
+}
