@@ -7,23 +7,24 @@
    width: 100%;
 }
 
-.header--logotipo{
-   @include font-size(70);
-}
-
-.header--burgerMenu{
-   position: absolute;
-   right: 2%;
-   top: 43%;
-   .header--burgerMenu--text{
-      @include font-size(16);
-      display: inline-block;
-      margin-right: .5em;
-      vertical-align: middle;
+   .header--logotipo{
+      @include font-size(70);
    }
 
-   .header--burgerMenu--icon{
-      @include font-size(24);
-      vertical-align: middle;
+
+   .header--burgerMenu{
+      position: absolute;
+      right: 2%;
+      top: 43%;
+      &--text{
+         @include font-size(16);
+         display: inline-block;
+         margin-right: .5em;
+         vertical-align: middle;
+      }
+
+      &--icon{
+         @include font-size(24);
+         vertical-align: middle;
+      }
    }
-}
