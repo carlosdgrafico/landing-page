@@ -1,17 +1,26 @@
 .banner{
-   background-color: $primary-color;
-   padding: 6em 0 4em 0;
    color: #fff;
    text-align: center;
    position: relative;
+}
+
+
+
+
+/* Seccion wiseBot */
+.banner__main{
+   background-color: $primary-color;
+   padding: 6em 0;
    overflow: hidden;
 }
+
+
 
 .banner--info{
    text-align: left;
 
    &--titulo{
-      @include font-size(60);
+      @include font-size(55);
       @include line-height(72);
       font-weight: 300;
       margin: 0;
@@ -24,17 +33,30 @@
    &--parrafo{
       @include font-size(18);
       margin: 1.5em 0;
+
+      .parrafo--destacado{
+         color: $secondary-color;
+         font-weight: 400;
+      }
    }
 }
 
-.banner--info--ancla{
+.banner--foto{
+   margin: 0;
+}
+
+
+
+.banner--ancla{
    color: #fff;
    margin: 3em auto 0 auto;
    position: relative;
-   .ancla--mouse{
+
+   &--mouse{
       @include font-size(50);
    }
-   .ancla--flecha{
+
+   &--flecha{
       @include font-size(20);
       position: absolute;
       left: 0;
@@ -42,13 +64,41 @@
       top: 40px;
    }
 
-   .ancla--text{
+   &--text{
       @include font-size(16);
       font-weight: 300;
       margin-top: 1.5em;
    }
-
 }
+/* Fin */
+
+
+
+/* Seccion wiseSense */
+.banner__wisesense{
+   background-color: #fff;
+   padding: 0;
+
+   .banner--foto{
+      position: absolute;
+      top: -150px;
+      left: 0;
+      width: 60%;
+      z-index: 2;
+   }
+
+   .banner--info--titulo{
+      color: $primary-color;
+   }
+
+   .banner--info--parrafo{
+      color: $primary-color;
+   }
+}
+
+/* Fin */
+
+
 
 
 
