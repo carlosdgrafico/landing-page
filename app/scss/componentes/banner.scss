@@ -1,1 +1,64 @@
+.banner{
+   background-color: $primary-color;
+   padding: 6em 0 4em 0;
+   color: #fff;
+   text-align: center;
+   position: relative;
+   overflow: hidden;
+}
 
+.banner--info{
+   text-align: left;
+
+   &--titulo{
+      @include font-size(60);
+      @include line-height(72);
+      font-weight: 300;
+      margin: 0;
+
+      .titulo--destacado{
+         color: $secondary-color;
+      }
+   }
+
+   &--parrafo{
+      @include font-size(18);
+      margin: 1.5em 0;
+   }
+}
+
+.banner--info--ancla{
+   color: #fff;
+   margin: 3em auto 0 auto;
+   position: relative;
+   .ancla--mouse{
+      @include font-size(50);
+   }
+   .ancla--flecha{
+      @include font-size(20);
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 40px;
+   }
+
+   .ancla--text{
+      @include font-size(16);
+      font-weight: 300;
+      margin-top: 1.5em;
+   }
+
+}
+
+
+
+/* Triangulo inferior para dar la forma a las secciones*/
+.banner--forma{
+   border-left: 1920px solid #fff;
+   border-top: 100px solid transparent;
+   border-bottom: 0 solid transparent;
+   height: 0;
+   position: absolute;
+   left: 0;
+   bottom: 0;
+}
