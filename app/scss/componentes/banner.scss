@@ -1,9 +1,108 @@
+/* Clase global para todos los banner */
+
 .banner{
+   background-color: #fff;
    color: #fff;
    text-align: center;
    position: relative;
 }
 
+
+
+   .banner--info{
+      text-align: left;
+      color: $primary-color;
+
+      &--titulo{
+         @include font-size(55);
+         @include line-height(65);
+         font-weight: 300;
+         margin: 0;
+
+         .titulo--destacado{
+            color: $secondary-color;
+         }
+      }
+
+      &--parrafo{
+         @include font-size(18);
+         margin: 1.5em 0;
+
+         .parrafo--destacado{
+            color: $secondary-color;
+            font-weight: 400;
+         }
+      }
+
+
+      &--descarga{
+         max-width: 170px;
+         margin-right: 1em;
+         width: 100%;
+      }
+
+
+      &--testimonio{
+         color: $primary-color;
+         margin: 4em 0;
+
+         .testimonio--avatar{
+            border-radius: 50%;
+            overflow: hidden;
+            max-width: 65px;
+
+         }
+
+         .testimonio--texto{
+            color: #91999F;
+            @include font-size(14);
+            @include line-height(19);
+            font-style: italic;
+         }
+
+         .testimonio--autor{
+            @include font-size(16);
+            font-style: italic;
+            font-weight: 600;
+            margin-top: 1em;
+            &--nota{
+               font-weight: 300;
+            }
+         }
+      }
+
+   }
+
+
+   .banner--foto{
+      margin: 0;
+   }
+
+
+
+   .banner--ancla{
+      color: #fff;
+      margin: 3em auto 0 auto;
+      position: relative;
+
+      &--mouse{
+         @include font-size(50);
+      }
+
+      &--flecha{
+         @include font-size(20);
+         position: absolute;
+         left: 0;
+         right: 0;
+         top: 40px;
+      }
+
+      &--text{
+         @include font-size(16);
+         font-weight: 300;
+         margin-top: 1.5em;
+      }
+   }
 
 
 
@@ -12,70 +111,11 @@
    background-color: $primary-color;
    padding: 6em 0;
    overflow: hidden;
-}
 
-
-
-.banner--info{
-   text-align: left;
-
-   &--titulo{
-      @include font-size(55);
-      @include line-height(72);
-      font-weight: 300;
-      margin: 0;
-
-      .titulo--destacado{
-         color: $secondary-color;
-      }
+   .banner--info--titulo, .banner--info--parrafo{
+      color: #fff;
    }
 
-   &--parrafo{
-      @include font-size(18);
-      margin: 1.5em 0;
-
-      .parrafo--destacado{
-         color: $secondary-color;
-         font-weight: 400;
-      }
-   }
-
-   &--descarga{
-      max-width: 170px;
-      margin-right: 1em;
-      width: 100%;
-   }
-
-}
-
-.banner--foto{
-   margin: 0;
-}
-
-
-
-.banner--ancla{
-   color: #fff;
-   margin: 3em auto 0 auto;
-   position: relative;
-
-   &--mouse{
-      @include font-size(50);
-   }
-
-   &--flecha{
-      @include font-size(20);
-      position: absolute;
-      left: 0;
-      right: 0;
-      top: 40px;
-   }
-
-   &--text{
-      @include font-size(16);
-      font-weight: 300;
-      margin-top: 1.5em;
-   }
 }
 /* Fin */
 
@@ -83,7 +123,6 @@
 
 /* Seccion wiseSense */
 .banner__wisesense{
-   background-color: #fff;
    padding: 0;
 
    .banner--foto{
@@ -93,45 +132,33 @@
       width: 60%;
       z-index: 2;
    }
-
-   .banner--info--titulo{
-      color: $primary-color;
-   }
-
-   .banner--info--parrafo{
-      color: $primary-color;
-   }
 }
 
 /* Fin */
 
 
 
-/* Seccion APP */
+/* Seccion app */
 .banner__app{
-   background-color: #fff;
-   padding: 10em 0 4em 0;
-
-   .banner--foto{
-      position: static;
-   }
+   padding: 8em 0 4em 0;
 
    .banner--info{
-      margin-top: 10em;
+      margin-top: 8em;
    }
 
-   .banner--info--titulo{
-      color: $primary-color;
-   }
-
-   .banner--info--parrafo{
-      color: $primary-color;
-   }
 }
-
 /* Fin */
 
 
+/* Seccion features APP */
+.banner__features{
+   padding: 6em 0;
+
+   .banner--info{
+      margin-top: 5em;
+   }
+}
+/* Fin */
 
 
 
