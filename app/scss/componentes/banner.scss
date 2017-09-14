@@ -172,3 +172,10 @@
    left: 0;
    bottom: 0;
 }
+
+.banner--forma__top{
+   border-top: 0 solid transparent;
+   border-bottom: 100px solid transparent;
+   top: 0;
+   bottom: inherit;
+}
