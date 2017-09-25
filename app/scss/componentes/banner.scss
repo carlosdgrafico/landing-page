@@ -161,6 +161,73 @@
 /* Fin */
 
 
+.banner__partners{
+   .banner--sliderPartners--item{
+      height: 250px;
+      margin-top: 2em;
+      position: relative;
+
+   }
+
+   .item--logotipo{
+      max-width: 400px;
+      margin: 0 auto;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 5%;
+
+   }
+
+   .item--detalle{
+      color: #687C92;
+      @include font-size(14);
+      font-style: italic;
+      position: absolute;
+      bottom: 5%;
+   }
+}
+
+
+/* setting del carrousel */
+	.owl-partners{
+      display: inline-block !important;
+		position: relative;
+		z-index: 1;
+
+		.owl-nav {
+			display: none;
+		}
+
+		.owl-dots {
+			display: inline-block !important;
+			margin: 0 auto;
+			position: absolute;
+			bottom: -12%;
+			left: 0;
+			right: 0;
+			text-align: center;
+			z-index: 3;
+
+			.owl-dot {
+				background-color: #D8D8D8;
+				border: 1px solid #D8D8D8;
+				border-radius: 50%;
+				height: 10px;
+				display: inline-block;
+				margin: 5px;
+				pointer-events: all;
+				width: 10px;
+
+				&.active {
+					background-color: #5D5C5C;
+					border: 1px solid #5D5C5C;
+				}
+			}
+		}
+	}
+
+
 
 /* Triangulo inferior para dar la forma a las secciones*/
 .banner--forma{
