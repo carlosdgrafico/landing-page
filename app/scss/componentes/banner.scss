@@ -84,6 +84,7 @@
       color: #fff;
       margin: 3em auto 0 auto;
       position: relative;
+      transition: all .3s;
 
       &--mouse{
          @include font-size(50);
@@ -95,6 +96,7 @@
          left: 0;
          right: 0;
          top: 40px;
+         animation: animate-flecha 2s infinite ease;
       }
 
       &--text{
@@ -103,6 +105,12 @@
          margin-top: 1.5em;
       }
    }
+
+   @keyframes animate-flecha {
+          0%, 20%, 50%, 80%, 100% {transform: translateY(0)}
+          40% {transform: translateY(-10px)}
+          60% {transform: translateY(-10px)}
+      }
 
 
 

@@ -24,4 +24,27 @@ $(document).ready(function(){
    	});
 
 
+      $('.banner--ancla').click(function(){
+     	  if(location.pathname.replace(/^\//,'')==this.pathname.replace(/^\//,'')||location.hostname==this.hostname){
+     	    var
+     	    target=$(this.hash);
+     	    target=target.length?target:$('[name='+this.hash.slice(1)+']');
+     	    if(target.length){
+     	      $('html,body').animate({
+     	          scrollTop:target.offset().top-110
+     	      },1000);
+     	      return false;
+     	    }
+     	  }
+     	});
+
+      $(window).on('scroll', function(){
+        var $window = $(this);
+
+        $window.scrollTop() > 300
+          ? $('.banner--ancla').css('opacity', '0')
+          : $('.banner--ancla').css('opacity', '1');
+      });
+
+
 });
