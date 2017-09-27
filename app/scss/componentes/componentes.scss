@@ -11,6 +11,18 @@
 }
 
 
+.boton__borrar{
+   background-color: #C2C2C2;
+   &:hover, &:focus{
+      background-color: darken(#C2C2C2, 5%) !important;
+   }
+}
+
+button.boton{
+   border: none !important;
+}
+
+
 
 
 /*Contenedor general */
