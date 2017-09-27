@@ -1,6 +1,12 @@
 .video{
-   border: 2px solid red;
+   background-image: url(../img/cover-video.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   background-color: $primary-color;
+   margin: 8em 0;
    position: relative;
+   text-align: center;
 }
 
 .video--presentacion{
@@ -11,6 +17,7 @@
    right: 0;
    top: 35%;
    text-align: center;
+   transition: all .5s;
    z-index: 10;
    &--titulo{
       @include font-size(60);
@@ -27,6 +34,7 @@
       background-color: #fff;
       border-radius: 50%;
       color: $primary-color;
+      cursor: pointer;
       display: inline-block;
       @include font-size(16);
       height: 50px;
@@ -41,17 +49,14 @@
 
 }
 
-.video--cover{
-   position: absolute;
-   z-index: 5;
-}
 
 
 video{
-   max-width: 840px;
+   display: inherit;
+   margin: 0 auto;
+   max-width: 800px;
+   opacity: 0;
+   transition: all 1.5s;
    width: 100%;
-
-   @media(max-width: 992px){
-      max-width: 100%;
-   }
+   z-index: 0;
 }
