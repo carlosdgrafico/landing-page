@@ -1,0 +1,38 @@
+.footer{
+   background-color: $primary-color;
+   color: #fff;
+   padding: 1.5em 0 0 0;
+   text-align: center;
+
+   &--logotipo{
+      @include font-size(60);
+   }
+
+   &--copy{
+      background-color: #141E27;
+      margin-top: 1.2em;
+      overflow: hidden;
+      padding: .5em 0;
+      &--legal{
+         color: #fff;
+         @include font-size(12);
+         float: left;
+         opacity: .5;
+      }
+
+      &--sociales{
+         float: right;
+         .sociales--item{
+            color: #fff;
+            @include font-size(14);
+            margin-left: 1em;
+            opacity: .5;
+            transition: all .3s;
+
+            &:hover{
+               opacity: .7;
+            }
+         }
+      }
+   }
+}
