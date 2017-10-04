@@ -1,0 +1,13 @@
+.top-message {
+  display: none;
+  text-align: center;
+  padding: 11px 20px;
+  background-color: #ef626e;
+  color: white;
+}
+
+@media screen and (max-width: 1145px) {
+  .top-message {
+    display: inherit;
+  }
+}
