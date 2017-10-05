@@ -28,8 +28,18 @@
 
 
 /* Oculta los iconos de comparar y hamburguesa en desktop */
-@media(min-width: 800px){
-	.u-menu-mobile{
+
+
+.u-mobile{
+	display: none;
+	@media(max-width: 480px){
+		display: block;
+	}
+}
+
+.u-destop{
+	display: inherit;
+	@media(max-width: 480px){
 		display: none;
 	}
 }

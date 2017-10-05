@@ -7,6 +7,10 @@
    margin: 8em 0;
    position: relative;
    text-align: center;
+
+   @media(max-width: 480px){
+      margin-bottom: 2em;
+   }
 }
 
 .video--presentacion{
@@ -19,15 +23,35 @@
    text-align: center;
    transition: all .5s;
    z-index: 10;
+
+   @media(max-width: 480px){
+      top: 20%;
+   }
+
    &--titulo{
       @include font-size(60);
       font-weight: 300;
       margin: 0;
+
+      @media(max-width: 1024px){
+         @include font-size(48);
+         @include line-height(50);
+      }
+
+      @media(max-width: 480px){
+         @include font-size(24);
+         @include line-height(30);
+      }
    }
    &--bajada{
       @include font-size(24);
       font-weight: 300;
       opacity: .5;
+
+      @media(max-width: 480px){
+         @include font-size(12);
+
+      }
    }
 
    &--icon{
@@ -42,8 +66,13 @@
       margin-top: 1.5em;
       text-align: center;
       width: 50px;
+
       &:before{
          margin-left: 5px;
+      }
+
+      @media(max-width: 480px){
+         margin-top: .5em;
       }
    }
 

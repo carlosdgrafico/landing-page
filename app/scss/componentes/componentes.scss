@@ -5,8 +5,18 @@
    font-weight: 400;
    padding: 1em 5em;
 
+
    &:hover{
       background-color: darken($secondary-color, 5%);
+   }
+
+   @media(max-width: 768px){
+      @include font-size(16);
+   }
+
+   @media(max-width: 768px){
+      margin: .3em 0;
+      width: 100%;
    }
 }
 

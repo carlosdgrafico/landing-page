@@ -13,15 +13,30 @@
       font-weight: 300;
       margin: 0 0 1.5em 0;
 
+      @media(max-width: 1024px){
+         @include font-size(48);
+         @include line-height(50);
+      }
+
+      @media(max-width: 768px){
+         @include font-size(30);
+      }
+
 
       &--destacado{
          color: $secondary-color;
       }
+
       &--bajada{
          display: block;
          @include font-size(18);
          @include line-height(30);
          font-weight: 300;
+
+         @media(max-width: 768px){
+            @include font-size(16);
+            @include line-height(18);
+         }
       }
    }
 
@@ -40,6 +55,11 @@
          img{
             filter: grayscale(100%);
          }
+
+         @media(max-width: 768px){
+            max-width: 90px;
+         }
+
       }
 
       &--nombre{
@@ -50,6 +70,18 @@
             color: #91999F;
             display: block;
             @include font-size(14);
+         }
+
+         @media(max-width: 768px){
+            @include font-size(16);
+            @include line-height(16);
+         }
+
+         @media(max-width: 480px){
+            @include font-size(14);
+            span{
+               @include font-size(12);
+            }
          }
       }
 

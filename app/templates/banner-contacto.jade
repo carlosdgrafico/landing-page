@@ -1,8 +1,8 @@
 section.banner.banner__contacto
 	.wrap
 		.row
-			.col.s4
-				.banner--info
+			.col.s12.m4
+				.banner--info.wow.slideInLeft
 					h2.banner--info--titulo Te gusto 
 						span.titulo--destacado WiseBot?
 					p.banner--info--parrafo Si te gusto lo que viste y eres una de las personas a las cuales 
@@ -11,7 +11,7 @@ section.banner.banner__contacto
 					p.banner--info--parrafo Por ahora te invitamos a descargar nuestrta 
 						span.parrafo--destacado WiseGrowth APP 
 						| y disfrutar de todos los beneficios que tiene para ti.  
-				.contacto--info
+				.contacto--info.wow.slideInLeft(data-wow-offset="10" data-wow-delay=".5s")
 					h2.contacto--info--titulo Contacto
 					ul.contacto--info--lista
 						li.lista--item
@@ -23,8 +23,8 @@ section.banner.banner__contacto
 						li.lista--item
 							span.icon-arrow-right
 							| Av. nuestra casa #1466 Providencia, Santiago de Chile 
-			.col.s6.offset-s2
-				.contacto--formulario
+			.col.s12.m6.offset-m2
+				.contacto--formulario.wow.slideInRight
 					form(name='formulario' method='post' action='')
 						.input-field
 							input.validate(type='text' name='nombre')
