@@ -25,3 +25,19 @@
 	clear: both;
 	width: 100%;
 }
+
+
+/* Oculta los iconos de comparar y hamburguesa en desktop */
+@media(min-width: 800px){
+	.u-menu-mobile{
+		display: none;
+	}
+}
+
+
+/* Muestra y/o oculta el menu lateral */
+.u-show{
+	//  position: absolute;
+	left: 0 !important;
+	//  overflow: hidden;
+}

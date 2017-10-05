@@ -24,7 +24,7 @@ $(document).ready(function(){
 	});
 
 
-   $('.banner--ancla').click(function(){
+   $('.banner--ancla .menuLateral--item--link').click(function(){
   	  if(location.pathname.replace(/^\//,'')==this.pathname.replace(/^\//,'')||location.hostname==this.hostname){
   	    var
   	    target=$(this.hash);
@@ -55,6 +55,46 @@ $(document).ready(function(){
    $('#video').click(function() {
      this.paused ? this.play() : this.pause();
    });
+
+
+   // icon hamburguesa
+   $(".header--iconMobile--burger").click(function() {
+	  $(this).toggleClass("on");
+   });
+
+
+   // despliega el menu lateral
+	$('.header--iconMobile--burger').on('click', function() {
+      $(".menuLateral").toggleClass('u-show');
+
+      if($('.menuLateral').hasClass('u-show')){
+         setTimeout(function(){
+           $(".menuLateral").css('background-color', 'rgba(35,51,64,1)');
+           $(".menuLateral--item").css('opacity', '1');
+         }, 500);
+      } else {
+         $(".menuLateral").css('background-color', 'rgba(35,51,64,0)');
+         $(".menuLateral--item").css('opacity', '.3');
+      }
+
+	});
+
+
+
+   var active;
+   // agrega la clase active al item del menu y me guarda info de el
+	$('.menuLateral--item').click(function(){
+		active = $('li.menuLateral--item__active').attr('id');
+		console.log(active);
+		$(".menuLateral--item").removeClass('menuLateral--item__active');
+		$(this).addClass('menuLateral--item__active');
+
+      $('.menuLateral').removeClass('u-show');
+     $(".menuLateral").css('background-color', 'rgba(35,51,64,0)');
+     $(".menuLateral--item").css('opacity', '.3');
+     $('.header--iconMobile--burger').removeClass('on');
+
+	});
 
 
 });
