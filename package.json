@@ -1,5 +1,5 @@
 {
-  "name": "wisegrowth",
+  "name": "wg-landing-page",
   "version": "1.0.0",
   "description": "landing-page wisegrowth",
   "main": "index.js",
@@ -17,14 +17,18 @@
   },
   "homepage": "https://github.com/wisegrowth/landing-page#readme",
   "devDependencies": {
+    "dotenv": "^4.0.0",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^4.0.0",
+    "gulp-awspublish": "^3.3.0",
     "gulp-concat": "^2.6.1",
     "gulp-imagemin": "^3.3.0",
     "gulp-jade": "^1.1.0",
+    "gulp-s3": "^0.11.0",
     "gulp-sass": "^3.1.0",
     "gulp-uglify": "^3.0.0",
     "gulp-watch": "^4.3.11",
     "gulp-webserver": "^0.9.1"
-  }
+  },
+  "dependencies": {}
 }
