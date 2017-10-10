@@ -42,7 +42,7 @@ $(document).ready(function(){
    wow.init();
 
 
-   $('.banner--ancla .menuLateral--item--link').click(function(){
+   $('.banner--ancla').click(function(){
   	  if(location.pathname.replace(/^\//,'')==this.pathname.replace(/^\//,'')||location.hostname==this.hostname){
   	    var
   	    target=$(this.hash);
@@ -79,6 +79,8 @@ $(document).ready(function(){
    $(".header--iconMobile--burger").click(function() {
 	  $(this).toggleClass("on");
    });
+
+   $('.parallax').parallax();
 
 
    // despliega el menu lateral

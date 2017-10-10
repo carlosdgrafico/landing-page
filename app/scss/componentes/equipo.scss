@@ -1,9 +1,17 @@
 .equipo{
    background-color: $primary-color;
    color: #fff;
-   text-align: center;
+   overflow: hidden;
    position: relative;
    padding: 10em 0 8em 0;
+   text-align: center;
+
+   @media(min-width: 480px){
+      .u-clear{
+         display: none;
+      }
+   }
+
 }
 
 

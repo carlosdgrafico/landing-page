@@ -168,21 +168,26 @@
    padding: 0;
 
    .banner--foto{
+      overflow:visible !important; // esto sirve para que la clase parallax no em oculte la foto
       position: absolute;
-      top: -150px;
+      top: 100px;
       left: 0;
       width: 60%;
       z-index: 2;
    }
 
+   .parallax-container {
+      height: 350px;
+    }
+
    @media(max-width: 480px){
       .banner--foto{
          top: -120px;
-         width: 80%;
+         width: 95%;
       }
 
       .banner--info{
-         margin-top: 6em;
+         margin-top: 2em;
       }
    }
 
@@ -192,9 +197,21 @@
 
 
 
+.banner__wisebot{
+   padding: 8em 0 0 0;
+
+   @media(max-width: 768px){
+      padding: 4em 0 0 0;
+   }
+}
+
 /* Seccion app */
 .banner__app{
    padding: 8em 0 4em 0;
+
+   @media(max-width: 768px){
+      padding: 4em 0;
+   }
 
    .banner--info{
       margin-top: 8em;
@@ -212,11 +229,27 @@
 .banner__features{
    padding: 6em 0;
 
+   .banner--foto{
+      overflow:visible !important; // esto sirve para que la clase parallax no em oculte la foto
+      position: absolute;
+      top: 150px;
+      left: 0;
+      width: 50%;
+      z-index: 2;
+   }
+
+   .parallax-container {
+      height: 400px;
+   }
+
    .banner--info{
       margin-top: 5em;
    }
 }
 /* Fin */
+
+
+
 
 
 .banner__partners{
